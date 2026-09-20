@@ -5,46 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مواصفات حاسوبي - Dell Latitude 5410</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f6f9;
             color: #333;
             padding: 20px;
+            direction: rtl;
         }
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             background: #ffffff;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             padding: 25px;
-            box-sizing: border-box;
         }
         h1 {
             text-align: center;
             color: #0076ce;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         /* معرض الصور */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 15px;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
-        .gallery img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
+        .gallery-item {
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
             border-radius: 8px;
-            border: 1px solid #ddd;
+            overflow: hidden;
+            text-align: center;
         }
-        /* جدول الخصائص */
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: #000000;
+            display: block;
+        }
+        .gallery-item p {
+            margin: 8px 0;
+            font-size: 14px;
+            color: #555;
+            font-weight: 600;
+        }
+        /* جدول المواصفات */
         .specs-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 15px;
+            margin-top: 10px;
         }
         .specs-table th, .specs-table td {
             padding: 12px 15px;
@@ -55,6 +71,7 @@
             background-color: #f8f9fa;
             color: #0076ce;
             width: 35%;
+            font-size: 15px;
         }
         .specs-table tr:hover {
             background-color: #f1f5f9;
@@ -66,14 +83,23 @@
 <div class="container">
     <h1>💻 مواصفات حاسوبي - Dell Latitude 5410</h1>
 
-    <!-- معرض الصور (تأكد من مطابقة أسماء الملفات) -->
+    <!-- معرض صور الحاسوب -->
     <div class="gallery">
-        <img src="dell_front.jpg" alt="صورة الحاسوب من الأمام">
-        <img src="dell_keyboard.jpg" alt="لوحة المفاتيح">
-        <img src="dell_side.jpg" alt="المظهر الجانبي">
+        <div class="gallery-item">
+            <img src="5870865250620477056 (2).jpg" alt="واجهة الحاسوب والشاشة">
+            <p>واجهة الجهاز والشاشة</p>
+        </div>
+        <div class="gallery-item">
+            <img src="5870865250620477055 (2).jpg" alt="غطاء الحاسوب الخارجي">
+            <p>الهيكل الخارجي (Dell)</p>
+        </div>
+        <div class="gallery-item">
+            <img src="5870865250620477057.jpg" alt="سطح المكتب">
+            <p>سطح المكتب (Windows 11)</p>
+        </div>
     </div>
 
-    <!-- جدول الخصائص -->
+    <!-- جدول الخصائص الدقيقة -->
     <table class="specs-table">
         <tr>
             <th>الموديل (Model)</th>
@@ -81,15 +107,15 @@
         </tr>
         <tr>
             <th>المعالج (CPU)</th>
-            <td>Intel® Core™ i5-10310U (4 Cores / 8 Threads)</td>
+            <td>Intel® Core™ i5-10310U (4 Cores / 8 Threads, up to 4.40 GHz)</td>
         </tr>
         <tr>
             <th>الذاكرة العشوائية (RAM)</th>
-            <td>16 GB DDR4</td>
+            <td>16 GB DDR4 (15.6 GB Mapped)</td>
         </tr>
         <tr>
             <th>التخزين (Storage)</th>
-            <td>256 GB NVMe SSD</td>
+            <td>256 GB NVMe SSD (Partitioned C: / D:)</td>
         </tr>
         <tr>
             <th>بطاقة الشاشة (GPU)</th>
@@ -97,7 +123,11 @@
         </tr>
         <tr>
             <th>نظام التشغيل (OS)</th>
-            <td>Windows 10</td>
+            <td>Windows 11</td>
+        </tr>
+        <tr>
+            <th>الشاشة (Display)</th>
+            <td>14.0 بوصة FHD (1920x1080)</td>
         </tr>
     </table>
 </div>
